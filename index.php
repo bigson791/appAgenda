@@ -16,12 +16,12 @@
             cargarAccion($controlador, ACCION_PRINCIPAL);
         }
 
-      
+        
     }else{
         $controlador = cargarControlador(CONTROLADOR_PRINCIPAL);
-        cargarAccion(CONTROLADOR_PRINCIPAL, ACCION_PRINCIPAL);
-       // $accionTmp = ACCION_PRINCIPAL;
-        //$controlador->$accion;
+        $accionTmps= ACCION_PRINCIPAL;
+        $controlador->$accionTmps();
+
     }
 
     //$control = new personasController();

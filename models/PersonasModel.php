@@ -26,8 +26,8 @@
 
         }
 
-        public function insertar($cod_person, $name, $Lname, $phone,$mail, $Status_idStatus){
-            $resultado = $this->db->query("INSERT INTO persona(cod_person, name, Lname, phone,mail, Status_idStatus) VALUES ('$cod_person','$name','$Lname','$phone','$mail', '1')");
+        public function insertar($cod_person, $name, $lname, $phone,$mail){
+            $resultado = $this->db->query("INSERT INTO persona(cod_person, name, Lname, phone,mail, Status_idStatus) VALUES ('$cod_person','$name','$lname','$phone','$mail', '1')");
         }
 
     }

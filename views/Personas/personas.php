@@ -37,7 +37,7 @@
             ?>
         </tbody>
     </table>
-    <input type="button" value="Agregar">
+   <a href="index.php?c=personas&a=nuevo">Agregar nuevo</a>
     
 </body>
 </html>
