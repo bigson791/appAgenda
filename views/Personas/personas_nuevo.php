@@ -18,7 +18,7 @@
             Nombres: <input type="text" id="name" name="name" required pattern="[A-Za-z ]*"><br>
             Apellidos: <input type="text" id="lname" name="lname" required><br>
             Télefono: <input type="number" id="phone" name="phone" required><br>
-            Email: <input type="email" id="email" name="email" required><br>
+            Email: <input type="email" id="email" name="em<ail" required><br>
             <button id="guardar" name="guardar" type="submit">Guardar</button>
 
         </form>

@@ -8,12 +8,24 @@
     if(isset($_GET['c']))
     {   
         $controlador = cargarControlador($_GET['c']);
-    }else{
 
+        if(isset($_GET['a']))
+        {
+            cargarAccion($controlador, $_GET['a']);
+        }else{
+            cargarAccion($controlador, ACCION_PRINCIPAL);
+        }
+
+      
+    }else{
+        $controlador = cargarControlador(CONTROLADOR_PRINCIPAL);
+        cargarAccion(CONTROLADOR_PRINCIPAL, ACCION_PRINCIPAL);
+       // $accionTmp = ACCION_PRINCIPAL;
+        //$controlador->$accion;
     }
 
-    $control = new personasController();
-    $control->index();
+    //$control = new personasController();
+    //$control->index();
 
 
 ?>

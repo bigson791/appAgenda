@@ -4,7 +4,7 @@
         
         public static function conexion(){
 
-            $conexion=new mysqli("localhost","root","","contacts");
+            $conexion = new mysqli("localhost","root","","contacts");
 
             return $conexion;
         }
