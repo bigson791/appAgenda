@@ -34,7 +34,6 @@
             $personas->insertar($cod_person, $name, $lname, $phone,$mail);
             
             $data["titulo"] = "Agregar Nuevo Contacto";
-            require_once "views/Personas/personas_nuevo.php";
             $this->index();
 
         }
