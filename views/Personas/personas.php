@@ -19,6 +19,8 @@
             <th>Apellidos</th>
             <th>Telefono</th>
             <th>Email</th>
+            <th>Modificar</th>
+            <th>Eliminar</th>
         </thead>
         <tbody>
             <?PHP foreach($data["personas"] as $dato){
