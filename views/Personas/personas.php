@@ -28,6 +28,8 @@
                 echo "<td>".$dato["Lname"]."</td>";
                 echo "<td>".$dato["phone"]."</td>";
                 echo "<td>".$dato["mail"]."</td>";
+                echo "<td><a href='index.php?c=personas&a=modificar&id=".$dato["id"]."'>Modificar</a></td>";
+                echo "<td><a href='index.php?c=personas&a=eliminar&id=".$dato["id"]."'>Eliminar</a></td>";
                 echo"</tr>";
 
             }
