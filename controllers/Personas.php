@@ -37,14 +37,17 @@
             $this->index(); // 
 
         }
-        public function modificar($id)
+        public function modificar()
         {
-            $data["id"] = $id;
-            $data["titulo"] = "Modificar";
+            $data["personas"] = $id;
+            //$id=$_GET['id'];
+            $personas = new Personas_modelo();
+            $data["personas"] = $personas->get_persona($id);
+             $data["titulo"] = "Modificar";
             require_once "views/Personas/personas_modificar.php";
         }
 
-        public function actualizar() // recibe los datos via post y los guarda en la base de datos
+        public function actualizar($id) // recibe los datos via post y los guarda en la base de datos
         {
             $id =$_POST['id'];
             $cod_person =$_POST['cod_person']; //mysql_escape_string ayuda a evitar las inyecciones sql
