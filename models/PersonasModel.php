@@ -32,7 +32,7 @@
 
         public function modificar($id, $cod_person, $name, $lname, $phone,$mail)
         {
-            $resultado = $this->db->query("UPDATE persona set cod_person='$cod_person', name='$name', Lname='$lname', phone = '$phone',mail='$mail' WHERE  id='$id'");
+            $resultado = $this->db->query("UPDATE persona  SET cod_person='$cod_person', name='$name', Lname='$lname', phone = '$phone',mail='$mail' WHERE  id='$id'");
         }
 
         public function eliminar($id){

@@ -13,7 +13,7 @@
     <h2><?php echo $data["titulo"];?></h2>
     <br>
     <p>
-        <form id="nuevo" name="nuevo" method="POST" action="index.php?c=personas&a=modificar" autocomplete="off"><br>
+        <form id="nuevo" name="nuevo" method="POST" action="index.php?c=personas&a=actualizar" autocomplete="off"><br>
             <input type="hidden" id="id" name="id" value="<?php echo $data["id"] ?>">
             Código: <input type="number" id="cod_person" name="cod_person" required pattern="[A-Za-z ]*" value="<?php echo $data ["personas"]["cod_person"] ?>"><br>
             Nombres: <input type="text" id="name" name="name" required pattern="[A-Za-z ]*" value="<?php echo $data ["personas"]["name"] ?>"><br>
